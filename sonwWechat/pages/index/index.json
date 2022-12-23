@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "line": "./../common/line",
+    "tencentMap": "./../common/tencentMap"
+  },
+  "navigationBarTitleText": "天气监测"
+
+}

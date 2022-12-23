@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top_btns">
+    <view 
+      wx:for="{{eleList}}"
+      wx:key="value"
+      class="top_btns_li {{ actionEle===item.value?'action':'' }}" 
+      data-ele="{{item.value}}"
+      bindtap="changeEle"
+      >{{item.name}}</view>
+  </view>
+  <view class="live_img">
+    <image class="live_image" src="./../../images/laiyuan.png" alt="" mode="widthFix"></image>
+    <view class="live_position" v-if="showPosition">
+      <view class="text_box">
+        <text 
+          wx:for="{{stationsList}}"
+          wx:key="index"
+          wx:for-item="item"
+          style="top: {{item.topV}};left: {{item.leftV}}"
+          >{{item.value}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="live_notice">（注：折线图可放大与拖动）</view>
+  <view class="station_list" wx:if="echartsDataList.length > 0">
+    <block wx:for="{{echartsDataList}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+      <line chartsData="{{item}}" actionEle="{{actionEle}}" liveTime="{{liveTime}}"></line>
+    </block>
+  </view>
+  <view class="map_box">
+    <!-- <mymap name=""></mymap> -->
+    <tencentMap markers='{{markers}}'></tencentMap>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="map_container">
+    <map
+      id="myMap"
+      subkey="5FZBZ-ITIKK-NKHJX-AUIQR-3UMN5-TAFNR"
+      layer-style="1"
+      style="width: 100%; height: 300px;"
+      scale="8"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      polygons="{{polygons}}"
+      show-location
+    ></map>
+
+</view>

@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/weatherForecast/index",
+    "pages/serviceMaterials/index",
+    "pages/common/line/index",
+    "pages/common/pdf/index",
+    "pages/common/tencentMap/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#3679cd",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "天气监测",
+      "iconPath": "./images/tabbar/un_monitor.png",
+      "selectedIconPath": "./images/tabbar/monitor.png"
+    },{
+      "pagePath": "pages/weatherForecast/index",
+      "text": "天气预报",
+      "iconPath": "./images/tabbar/un_forecast.png",
+      "selectedIconPath": "./images/tabbar/forecast.png"
+    },{
+      "pagePath": "pages/serviceMaterials/index",
+      "text": "服务材料",
+      "iconPath": "./images/tabbar/un_sevice.png",
+      "selectedIconPath": "./images/tabbar/sevice.png"
+    }]
+  },
+  "permission": {
+    "scope.userLocation":{
+      "desc": "你的位置信息将用于小程序"
+    }
+  },
+  "requiredPrivateInfos": [
+      "getLocation"
+  ]
+  
+}

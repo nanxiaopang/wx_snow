@@ -1,0 +1,14 @@
+<view class="echarts_box">
+  <view class="station_info">
+    <view class="station_info_sort">1{{chartsData.sort}}</view>
+    <view class="station_info_id">{{chartsData.id}}</view>
+    <view class="station_info_name">{{chartsData.name}}</view>
+    <view class="station_info_value">
+      <view class="station_info_value_" style="width: {{chartsData.percent}}; background-color: {{chartsData.bgColor}}"></view>
+      <p class="station_info_value_p" style="color: {{chartsData.valueColor}}">{{chartsData.value}}  {{chartsData.unit}}</p>
+    
+    </view>
+  </view>
+  <ec-canvas class="mychart-dom-line" id="" canvas-id="mychart-dom-line" ec="{{ ec }}" force-use-old-canvas="true"></ec-canvas>
+  <!-- <ec-canvas class="mychart-dom-line" id="mychart-dom-line" canvas-id="mychart-dom-line" ec="{{ ec }}"></ec-canvas> -->
+</view>

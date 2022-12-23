@@ -1,0 +1,82 @@
+
+.top_btns{
+  width: 100%;
+  display: flex;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #dadada;
+  position: fixed;
+}
+.top_btns_li{
+  flex: 1;
+  line-height: 36px;
+  background-color: white;
+  text-align: center;
+  font-size: 14px;
+}
+.top_btns_li.action{
+  background: #3679cd;
+  color: white;
+}
+
+.station_list {
+  width: 100%;
+  flex: 1;
+  display: inline-block;
+  z-index: 9999;
+}
+.station_list line{
+  /* height: 100%; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.map_box{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+}
+.map_box map{
+  height: 100%;
+}
+
+
+.live_img{
+  width: 100%;
+  margin-top: 42px;
+  position: relative;
+  display: flex;
+}
+.live_img .live_image{
+  width: 100%;
+}
+.live_position{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  font-size: 12px;
+}
+.live_position .text_box{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.live_position text{
+  background: white;
+  padding: 1px 2px;
+  border-radius: 2px;
+  margin: 0;
+  position: absolute;
+}
+
+.live_notice{
+  width: 100%;
+  color: #aaaaaa;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px;
+}

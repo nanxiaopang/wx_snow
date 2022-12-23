@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "myPdf": "./../common/pdf"
+  },
+  "navigationBarTitleText": "天气预报"
+}
